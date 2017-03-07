@@ -33,7 +33,7 @@ saurabhApp.controller('homeController', function($scope, $http, $rootScope) {
     // #2 Delete Working
     $scope.delete = function(eid) {
         var tbd = $rootScope.eid;
-        $http.delete('https://api.mlab.com/api/1/databases/myangularproject/collections/mydatabase/' + tbd + '?apiKey=y2XGT0UQ97BuJVy8eLy-czqtJvSFvhNa')
+        $http.delete('https://api.mlab.com/api/1/databases/myangularproject/collections/mydatabase/' + tbd + '?apiKey=17lOeE2DxCKBXktdq7dha1douykm6jqt')
             .success(function(response) {
                 console.log('Deleted');
                 $('#myModal2').modal('hide');
@@ -58,7 +58,7 @@ saurabhApp.controller('homeController', function($scope, $http, $rootScope) {
 
     // Display in bootstrap modal
     $scope.boot = function(item) {
-        alert("You are in editing funtion");
+
             $rootScope.ename = item.Name;
             $rootScope.ecell = item.Cell;
             $rootScope.elocation = item.Location;
